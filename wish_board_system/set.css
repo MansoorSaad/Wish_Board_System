@@ -1,0 +1,38 @@
+body{
+      background: linear-gradient(rgba(255,255,255,.3),    rgba(255,255,255,.4)), url("observe.jpg");
+	
+}
+
+h1{
+text-align:center;
+color: aqua;
+font-size:50px;
+font-style:oblique;
+}
+
+#about,.signup,.login{
+border-style:solid;
+border-width:3px;
+border-color:rgb(0, 204, 255);
+}
+
+
+
+form  { display: table; margin-left: 8cm; margin-top: 3cm; }
+
+label { display: table-row;
+	font-size:25px;	
+	font-style:TimesNewRoman;
+	 }
+input { display: table-cell;  background: none; border:3px solid rgb(0, 204, 255);}
+
+
+
+
+
+
+
+
+
+
+

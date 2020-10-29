@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>SignIn</title>
+<style>
+form  { display: table; margin-left: 13cm; }
+
+label { display: table-row;
+	font-size:25px;	
+    font-style:TimesNewRoman;
+    font-weight: bold;
+	 }
+input { display: table-cell; background: none    }
+
+body{
+      background: linear-gradient(rgba(255,255,255,.3),    rgba(255,255,255,.4)), url("thinking.jpg");
+        text-align: center;
+        font-weight: bold;
+}
+textarea{ background: none   }
+.submit,.reset{
+  border-style:inherit;
+border-width:3px;
+border-color:antiquewhite;
+}
+</style>
+<script>
+    function validate(){
+        if (document.getElementsByName("fname")[0].value === "" ||
+            document.getElementsByName("lname")[0].value === "" || 
+            document.getElementsByName("passwd")[0].value === "" ||
+            document.getElementsByName("reg_no")[0].value === ""||
+            document.getElementsByName("branch")[0].value===""){
+        alert ( "Please enter All fields." );
+        return false;
+}
+return true;
+    }
+</script>
+</head> 
+<body>
+
+    <form  onsubmit = "return validate()" action="signup.jsp" method="get">
+        <fieldset>
+<label>First Name:</label> <input type="text" name="fname"><br>
+<label>Last Name:</label><input type="text" name="lname"><br>
+<label>Password:</label><input type="password" name="passwd"><br>
+<label>Year:</label><select name="yearselectbox">
+<option name="i">i</option>
+<option name="ii">ii</option>
+<option name="iii">iii</option>
+<option name="iiii">iiii</option>
+</select><br>
+<label>Reg.NO:</label><input type="text" name="reg_no"><br>
+<label>Course:</label><select name="courseselectbox">
+<option name="B.tech">B.Tech</option>
+<option name="B.B.A">B.B.A</option>
+<option name="B.C.A">B.C.A</option>
+<option name="B.pharm">B.pharm</option>
+<option name="M.Tech">M.Tech</option>
+<option name="M.B.A">M.B.A</option>
+<option name="B.C.A">B.C.A</option>
+<option name="PHD">PHD</option>
+</select><br>
+<label>Branch:</label><input type="text" name="branch"><br>
+<label>About me:</label><textarea rows=10 cols=27 name="aboutme">
+</textarea><br><br>
+<input type="submit" class="submit" name="submit">      <input type="reset" class="reset" name="reset">
+</fieldset>
+</form>
+</body>
+</html>
