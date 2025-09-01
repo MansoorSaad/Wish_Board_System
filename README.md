@@ -5,3 +5,13 @@ Dream Project
 <img src="https://github.com/SabbisettiGowthamKumar/Wish_Board_System/blob/main/sign_in.png" alt="img" width=800 height=500>
 <img src="https://github.com/SabbisettiGowthamKumar/Wish_Board_System/blob/main/home.png" alt="img" width=800 height=500>
 <img src="https://github.com/SabbisettiGowthamKumar/Wish_Board_System/blob/main/add_wish.png" alt="img" width=800 height=500>
+
+## Running locally
+
+This project consists of static HTML/JSP files. To preview the static pages you can start a small local server using Python:
+
+```bash
+python3 run_local_server.py
+```
+
+Then open [http://localhost:8000/wish_board.html](http://localhost:8000/wish_board.html) in your browser. Dynamic JSP functionality requires a full Java servlet container and MySQL database which are not included in this lightweight setup.
